@@ -37,7 +37,7 @@ plot.NDVI(dat)
 
 Q1: This plot suggests that Fynbos greenness (NDVI) as observed from satellite saturates with time since fire. Why do you think it saturates rather than increasing linearly with time?
 
->*Answer 1:*
+>*Answer 1:the plot shows NDVI saturating with time because the fynbos vegetation reaches maximum growth and density that is detectable by the satellite. The satellite is also limited in its ability to detect small changes that may occur as a result of new growth*
 
 <br>
 
@@ -104,7 +104,7 @@ Lots more parameters...
 
 Q2: How do the estimates for the common parameters compare?
 
->*Answer 2:*
+>*Answer 2:the estimates for the alpha and lambda parameters in model 2 are smaller than the estimates in model 1 while the lambda parameter estimate is greater in model 2 than in model 1*
 
 <br>
 
@@ -122,11 +122,11 @@ anova(fit_negexp, fit_negexpS)
 
 Q3: Which model is better?
 
->*Answer 3:*
+>*Answer 3: The residual sum of squares for model 2 is significantly smaller than that of model 1. Model 2 also fits the data significantly with a p-value < 0.05*
 
 Q4: How many degrees of freedom are there in this ANOVA and why (i.e. what are they)?
 
->*Answer 4:*
+>*Answer 4:There are two degrees of freedom because there are two more parameters is model 2 than model 1. These parameters are A and phi*
 
 <br>
 
@@ -219,7 +219,7 @@ AIC_simple - AIC_full
 
 Q5: Is there a preferred model and if so, which one?
 
->*Answer 5:*
+>*Answer 5:the full model has a smaller AIC than the simple model. The difference in AIC between the simple and full model is also greater than three. Therefore, the full model is preferred.*
 
 <br>
 
@@ -237,6 +237,8 @@ You'll notice that these are completely different to the AICs for the MLE models
 
 Q6: Why is it not okay to compare the AIC of these NLS models with the AIC of the MLE models? Hint: type `?AIC` into the R console and do some reading.
 
->*Answer 6:*
+>*Answer 6: the log-likelihood of the MLE models are maximized while the log-likelihood of NLS models is not. Therefore, we cannot compare the AIC of the NLS and MLE models together because the data is not on the same scale.*
+
+>*Github links to repositories: https://github.com/TebelloMabote/Tebello_Sian https://github.com/sian-wood/sian_tebello https://github.com/TebelloMabote/sian_tebello*
 
 <br>
